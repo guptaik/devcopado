@@ -1,0 +1,24 @@
+<template>
+    <lightning-card>
+        <!-- Salesforce lighting designing system predefined classes for css -->
+        <table class="slds-table slds-table_bordered">
+            <thead>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td> Age</td>
+                </tr>
+            </thead>
+        <template for:each={employeeList} for:item="employee">
+            <tr key = {employee.id}>
+            <td>{employee.fName}</td>
+            <td>{employee.lName}</td>
+            <td>{employee.loopType}</td>
+            <td>{employee.Age}</td>
+            </tr>
+        </template>
+    </table>
+    </lightning-card>
+   
+
+</template>
